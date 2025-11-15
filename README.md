@@ -71,11 +71,22 @@ cp .env.example .env
 Éditez `.env` et ajoutez vos clés API :
 
 ```env
-ANTHROPIC_API_KEY=sk-ant-...
-MESHY_API_KEY=msy_...
-PRINTABLES_API_KEY=...  # Optionnel
-MAKERWORLD_API_KEY=...  # Optionnel
+ANTHROPIC_API_KEY=sk-ant-api03-VOTRE_CLE_ICI
+MESHY_API_KEY=msy_VOTRE_CLE_ICI
+
+# Ces clés sont OPTIONNELLES - laissez vide si non disponibles
+PRINTABLES_API_KEY=
+MAKERWORLD_API_KEY=
+
+# Paramètres (ne pas modifier)
+MAX_IDEAS_PER_RUN=5
+CLAUDE_MODEL=claude-3-5-haiku-20241022
 ```
+
+⚠️ **IMPORTANT** :
+- **PAS de guillemets** autour des clés
+- **PAS d'espaces** autour du signe =
+- Clés Printables/MakerWorld **peuvent rester vides** (APIs non publiques pour l'instant)
 
 **Où trouver vos clés API :**
 
